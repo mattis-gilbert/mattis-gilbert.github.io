@@ -17,8 +17,8 @@ This project studies the way recruiters react to exogenous shocks in their labor
 
 This project studies the impact of providing information to recruiters about their labor market. Especially we consider the different channels through which employers react and the endline impact on hirings. 
 
-## Macro labor / HANK project
+## Labor supply constraint in HANK 
 
-Marginal propensity to consume. Labor market frictions. Leisure vs work.
+We document strong heterogeneities in labor supply constraint along the earnings distribution.
 
 
