@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 
-I am a second year Ph.D student in Economics at Sciences Po Paris under the supervision of Pierre Cahuc and Jean-Marc Robin.
+I am a third year Ph.D student in Economics at Sciences Po Paris under the supervision of Pierre Cahuc and Jean-Marc Robin.
 
  My main interests lie in applied and macro labor economics. 
  
