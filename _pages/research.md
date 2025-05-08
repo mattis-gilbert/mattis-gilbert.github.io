@@ -9,15 +9,17 @@ redirect_from:
 
 # Work in progress
 
-## Labor market tightness and recruiter's responses  
-#### (with [Roland Rathelot](http://rolandrathelot.com/))  
+## How do recruiters and job seekers adjust their behaviour to labour-market tightness? (JMP)
 
-This project studies the way recruiters react to exogenous shocks in their labor market. Using detailed online vacancy data as well as administrative unemployment data we study the different margins of adjustments and the relevant signals. 
+This project studies the way recruiters and job seekers react to exogenous shocks in their labor market. Using detailed online vacancy data as well as administrative unemployment data we study the different margins of adjustments and the relevant signals. 
 
-## Providing information to recruiters 
-#### (with [Roland Rathelot](http://rolandrathelot.com/)) 
+## Providing Labor Market Information to Recruiters
+#### (with Sebastian Butschek, Roland Rathelot, Andreas Steinmayr, Marina Schwab) 
 
 This project studies the impact of providing information to recruiters about their labor market. Especially we consider the different channels through which employers react and the endline impact on hirings. 
+
+## Do Recruiters Benchmark the Competition?
+#### (with Sebastian Butschek, Roland Rathelot, Andreas Steinmayr, Marina Schwab) 
 
 ## Labor supply constraint in HANK  
 #### (with [Naomi Cohen](https://www.naomicohen.fr/) and   [Nicolas Ghio](https://nicolasghio.github.io/))  
