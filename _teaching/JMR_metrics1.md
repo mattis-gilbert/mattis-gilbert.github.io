@@ -4,7 +4,7 @@ collection: teaching
 type: "Seminar - Master 1"
 permalink: /teaching/JMR_metrics1
 venue: "Sciences Po"
-date: 2022-01-01
+date: 2022-01-01 - 2025-01-01
 location: "Paris, France"
 ---
 
