@@ -11,7 +11,7 @@ redirect_from:
 
 ## How do recruiters and job seekers adjust their behaviour to labour-market tightness? (JMP)
 
-This project studies the way recruiters and job seekers react to exogenous shocks in their labor market. Using detailed online vacancy data as well as administrative unemployment data we study the different margins of adjustments and the relevant signals. 
+This project studies how employers and unemployed job seekers adjust their behavior as a function of labour-market tightness. I use detailed online vacancy data as well as unemployment registry data to build local labor market measures of tightness. I study the different margins of adjustments of recruiters and job seekers to tightess. Joint with social-security data I look at how these behaviors impact the dynamics of matching efficiency.
 
 ## Providing Labor Market Information to Recruiters
 #### (with Sebastian Butschek, Roland Rathelot, Andreas Steinmayr, Marina Schwab) 
@@ -21,7 +21,7 @@ This project studies the impact of providing information to recruiters about the
 ## Do Recruiters Benchmark the Competition?
 #### (with Sebastian Butschek, Roland Rathelot, Andreas Steinmayr, Marina Schwab) 
 
-## Labor supply constraint in HANK  
+## Labor Constraints and the Desire toWork More
 #### (with [Naomi Cohen](https://www.naomicohen.fr/) and   [Nicolas Ghio](https://nicolasghio.github.io/))  
 
 We document strong heterogeneities in labor supply constraint along the earnings distribution.
