@@ -4,7 +4,8 @@ document.querySelectorAll('.paper__toggle').forEach(function (b) {
     var box = b.closest('.paper').querySelector('.paper__abstract');
     var open = b.getAttribute('aria-expanded') === 'true';
     b.setAttribute('aria-expanded', open ? 'false' : 'true');
-    box.hidden = open;
+    if (box.classList.contains('paper__abstract--preview')) { box.classList.toggle('is-open', !open); }
+    else { box.hidden = open; }
   });
 });
 </script>

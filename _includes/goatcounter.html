@@ -1,0 +1,37 @@
+{% if site.analytics.goatcounter.code and site.analytics.goatcounter.code != "" %}
+<script data-goatcounter="https://{{ site.analytics.goatcounter.code }}.goatcounter.com/count"{% if site.analytics.goatcounter.allow_local %} data-goatcounter-settings='{"allow_local": true}'{% endif %} async src="//gc.zgo.at/count.js"></script>
+<script>
+(function () {
+  function count(name, title) {
+    if (window.goatcounter && window.goatcounter.count) {
+      window.goatcounter.count({ path: name, title: title || name, event: true });
+    }
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest('a, button');
+    if (!a) return;
+    if (a.classList.contains('paper__toggle')) {
+      if (a.getAttribute('aria-expanded') !== 'true') return;
+      var paper = a.closest('.paper');
+      var t = paper ? paper.querySelector('.paper__title') : null;
+      var name = t ? t.textContent.trim().replace(/\s+/g, ' ').slice(0, 60) : 'unknown';
+      count('abstract opened: ' + name);
+      return;
+    }
+    var href = a.getAttribute('href') || '';
+    if (href.indexOf('marginal_treatment_effects') > -1) { count('click: marginal treatment effects'); }
+    else if (href.indexOf('CV_GILBERT.pdf') > -1) { count('click: CV download'); }
+    else if (/\/cv\/?$/.test(href)) { count('click: CV page (sidebar)'); }
+    else if (href.indexOf('marketplace.visualstudio.com') > -1) { count(a.querySelector('img') ? 'click: VScode installs badge' : 'click: VScode extension link'); }
+    else if (href.indexOf('linkedin.com') > -1) { count('click: LinkedIn'); }
+    else if (href.indexOf('github.com') > -1) { count('click: GitHub'); }
+    else if (href.indexOf('mailto:') === 0) { count('click: email'); }
+    else if (href.indexOf('socialscienceregistry.org') > -1) {
+      var pp = a.closest('.paper');
+      var pt = pp ? pp.querySelector('.paper__title') : null;
+      count('click: pre-registration: ' + (pt ? pt.textContent.trim().replace(/\s+/g, ' ').slice(0, 60) : href));
+    }
+  });
+})();
+</script>
+{% endif %}
