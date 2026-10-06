@@ -83,7 +83,7 @@ author:
   name             : "Mattis GILBERT"
   avatar           : "profile.png"
   bio              : "Ph.D candidate - Labor economics"
-  location         : "Sciences Po Paris"
+  location         : "Sciences Po - CREST"
   employer         :
   pubmed           : 
   googlescholar    : 
@@ -109,7 +109,7 @@ author:
   stackoverflow    : 
   steam            :
   tumblr           :
-  twitter          : "@Mattis_GilbR"
+  twitter          :
   vine             :
   weibo            :
   xing             :
@@ -176,7 +176,7 @@ kramdown:
 # Collections
 collections:
   teaching:
-    output: true
+    output: false
     permalink: /:collection/:path/
   publications:
     output: true

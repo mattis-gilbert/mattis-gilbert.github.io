@@ -12,6 +12,18 @@
   {% assign title = post.title %}
 {% endif %}
 
+{% if post.collection == 'teaching' %}
+<article class="teach-item">
+  <div class="teach-item__year">{% if post.years %}{{ post.years | replace: "-", " – " }}{% else %}{{ post.date | default: "1900-01-01" | date: "%Y" }}{% endif %}</div>
+  <div class="teach-item__body">
+    <h2 class="teach-item__title">{{ post.title }}</h2>
+    <div class="teach-item__meta">{{ post.type }} &middot; <i>{{ post.venue }}</i></div>
+    {% if post.instructor or post.course_url %}
+    <div class="teach-item__links">{% if post.instructor %}Teaching assistant for {% if post.instructor_url %}<a href="{{ post.instructor_url }}" target="_blank" rel="noopener">{{ post.instructor }}</a>{% else %}{{ post.instructor }}{% endif %}{% endif %}{% if post.instructor and post.course_url %} &middot; {% endif %}{% if post.course_url %}<a href="{{ post.course_url }}" target="_blank" rel="noopener">Course page</a>{% endif %}</div>
+    {% endif %}
+  </div>
+</article>
+{% else %}
 <div class="{{ include.type | default: "list" }}__item">
   <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
@@ -27,7 +39,9 @@
     {% endif %}
 
     <h2 class="archive__item-title" itemprop="headline">
-      {% if post.link %}
+      {% if post.collection == 'teaching' %}
+        {{ title }}
+      {% elsif post.link %}
         <a href="{{ post.link }}">{{ title }}</a> <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink</span></a>
       {% else %}
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
@@ -40,13 +54,17 @@
 
         {% if post.collection == 'teaching' %}
           <p> {{ post.type }}, <i>{{ post.venue }}</i>, {% if post.years %}{{ post.years }}{% else %}{{ post.date | default: "1900-01-01" | date: "%Y" }}{% endif %} </p>
+          {% if post.instructor or post.course_url %}
+          <p>{% if post.instructor %}Teaching assistant for {% if post.instructor_url %}<a href="{{ post.instructor_url }}" target="_blank" rel="noopener">{{ post.instructor }}</a>{% else %}{{ post.instructor }}{% endif %}{% endif %}{% if post.instructor and post.course_url %} &middot; {% endif %}{% if post.course_url %}<a href="{{ post.course_url }}" target="_blank" rel="noopener">Course page</a>{% endif %}</p>
+          {% endif %}
         {% elsif post.collection == 'publications' %}
           <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
         {% elsif post.date %}
          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
         {% endif %}
 
-    {% if post.excerpt and site.read_more != 'enabled' %}
+    {% if post.collection == 'teaching' %}
+    {% elsif post.excerpt and site.read_more != 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
     {% elsif post.excerpt and site.read_more == 'enabled' %}
     <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
@@ -62,3 +80,4 @@
 
   </article>
 </div>
+{% endif %}

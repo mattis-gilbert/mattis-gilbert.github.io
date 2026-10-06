@@ -8,7 +8,9 @@ redirect_from:
 ---
 
 {% include base_path %}
-[Download CV here](https://mattis-gilbert.github.io/files/CV_GILBERT.pdf)
+<p class="cv-actions"><a class="paper__btn" href="{{ base_path }}/files/CV_GILBERT.pdf" target="_blank" rel="noopener">Download PDF</a></p>
+
+<iframe class="cv-frame" src="{{ base_path }}/files/CV_GILBERT.pdf#view=FitH" title="Curriculum vitae"></iframe>
 
 <!-- Education
 ======

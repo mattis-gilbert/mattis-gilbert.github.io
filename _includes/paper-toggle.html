@@ -1,0 +1,10 @@
+<script>
+document.querySelectorAll('.paper__toggle').forEach(function (b) {
+  b.addEventListener('click', function () {
+    var box = b.closest('.paper').querySelector('.paper__abstract');
+    var open = b.getAttribute('aria-expanded') === 'true';
+    b.setAttribute('aria-expanded', open ? 'false' : 'true');
+    box.hidden = open;
+  });
+});
+</script>

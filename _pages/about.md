@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Welcome to my website"
+title: "Information frictions in the labor market"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -9,12 +9,31 @@ redirect_from:
 ---
 
 
-I am a fifth year Ph.D student in Economics at Sciences Po Paris and CREST under the supervision of Pierre Cahuc and Jean-Marc Robin.
+I am a fifth year Ph.D student in Economics at Sciences Po Paris and CREST under the supervision of [Pierre Cahuc](https://sites.google.com/site/pierrecahuc/) and [Jean-Marc Robin](https://sites.google.com/site/jmarcrobin/home?authuser=0).
 
  My main interests lie in applied and macro labor economics. 
  
- My research focuses on information frictions in the labor market, from both the demand and the supply side. More specifically, I study firms' imperfect information at the wage-posting stage and job seekers' imperfect information about occupational mobility. 
+ My research focuses on information frictions in the labor market, from both the demand and the supply side. More specifically, I study firms' imperfect information at the wage-posting stage and job seekers' imperfect information about occupational mobility.
 
+<div class="paper paper--box">
+<p class="paper__label">Job market paper</p>
+<h3 class="paper__title">Opportunity, taste or misinformation? How the unemployed choose which occupations to apply to (JMP)</h3>
+<div class="paper__links">
+<button type="button" class="paper__btn paper__toggle" aria-expanded="true">Abstract</button>
+<a class="paper__btn" href="/research/">All research</a>
+</div>
+<div class="paper__abstract"><p>Job seekers apply widely: most of their applications go to occupations other than the one they registered for. Experiments show that redirecting their search can be beneficial, which suggests they do not know well where to look. I ask how much imperfect information misallocates job seekers across occupations. Three forces direct search: opportunity (hiring chances and pay), taste, and imperfect information. I build a directed search model in which job seekers choose where to apply based on their tastes and on rational beliefs about their prospects, and employers decide whom to hire. I estimate the model with data from a major online job board that links applications to hires and wages. How applications respond to familiar versus unfamiliar occupations separates taste from imperfect information. The estimated model measures the welfare cost of imperfect information, and a planner's solution shows how much of the gap better information alone cannot close.</p></div>
+</div>
+
+
+<div class="home-list" markdown="0">
+<p class="paper__label paper__label--muted">Other work in progress</p>
+<div class="home-list__item"><a href="/research/">Labor-Market Information, Job Postings, and Employer Beliefs: Experimental Evidence from Austria</a><span>with Butschek, Rathelot, Steinmayr, Schwab</span></div>
+<div class="home-list__item"><a href="/research/">How does providing labour-market information to employers at the job-posting stage change job postings and hiring outcomes? Experimental evidence from French employers</a><span>with Butschek, Rathelot, Steinmayr, Schwab</span></div>
+<div class="home-list__item"><a href="/research/">Wishing to Work More? Preferences, Constraints, and Hours Worked</a><span>with Naomi Cohen and Nicolas Ghio</span></div>
+</div>
+
+{% include paper-toggle.html %}
 
 
 <!-- This is the front page of a website that is powered by the [academicpages template](https://github.com/academicpages/academicpages.github.io) and hosted on GitHub pages. [GitHub pages](https://pages.github.com) is a free service in which websites are built and hosted from code and data stored in a GitHub repository, automatically updating when a new commit is made to the respository. This template was forked from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/) created by Michael Rose, and then extended to support the kinds of content that academics have: publications, talks, teaching, a portfolio, blog posts, and a dynamically-generated CV. You can fork [this repository](https://github.com/academicpages/academicpages.github.io) right now, modify the configuration and markdown files, add your own PDFs and other content, and have your own site for free, with no ads! An older version of this template powers my own personal website at [stuartgeiger.com](http://stuartgeiger.com), which uses [this Github repository](https://github.com/staeiou/staeiou.github.io).

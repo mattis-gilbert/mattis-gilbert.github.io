@@ -7,6 +7,6 @@ venue: "Sciences Po"
 order: 2
 date: 2025-01-01
 location: "Paris, France"
+instructor: "Claire Montialoux"
+instructor_url: "https://clairemontialoux.com/"
 ---
-
-TA for "Economics of Discrimination" by Claire Montialoux in 2025.

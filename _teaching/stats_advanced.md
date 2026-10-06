@@ -8,7 +8,3 @@ order: 3
 date: 2022-01-01
 location: "Le Havre campus, France"
 ---
-
-Bachelor 1  class, introducing students to statistics for social sciences. Starting from Probability theory up to basic descriptive statistics and regression models. 
-
-Students hand in a group project. 
