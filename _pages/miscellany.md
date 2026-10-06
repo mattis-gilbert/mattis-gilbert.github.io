@@ -1,4 +1,5 @@
 ---
+bg: misc
 layout: archive
 title: "Miscellany"
 permalink: /miscellany/

@@ -1,4 +1,5 @@
 ---
+bg: research
 layout: archive
 title: "Research"
 permalink: /research/

@@ -2,3 +2,16 @@
 
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
+
+<script>
+(function () {
+  var items = document.querySelectorAll('.paper, .teach-item, .card, .home-list__item, .cv-frame');
+  if (!('IntersectionObserver' in window)) return;
+  var io = new IntersectionObserver(function (entries) {
+    entries.forEach(function (e) {
+      if (e.isIntersecting) { e.target.classList.add('is-visible'); io.unobserve(e.target); }
+    });
+  }, { threshold: 0.08 });
+  items.forEach(function (el) { el.classList.add('reveal'); io.observe(el); });
+})();
+</script>

@@ -1,4 +1,5 @@
 ---
+bg: cv
 layout: archive
 title: "CV"
 permalink: /cv/

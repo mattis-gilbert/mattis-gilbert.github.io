@@ -269,3 +269,170 @@ a {
 
 /* CV */
 .cv-actions { margin: 0 0 1em; }
+
+/* Ground */
+html, body { background: #f3f7f9; }
+body { position: relative; min-height: 100vh; }
+
+/* Background shapes (one set per page, see front matter "bg") */
+.bgshapes {
+  position: absolute;
+  left: 0; top: 0; right: 0; bottom: 0;
+  overflow: hidden;
+  z-index: 0;
+  pointer-events: none;
+  i { position: absolute; display: block; }
+}
+/* home: diagonal band + facets */
+.bgshapes--home {
+  i:nth-child(1) { left: 0; top: 0; width: 100%; height: min(42vw, 720px); background: linear-gradient(135deg, #1f6f8b 0%, #2b88a6 60%, #3a9bb8 100%); clip-path: polygon(0 0, 100% 0, 100% 58%, 0 100%); }
+  i:nth-child(2) { right: 0; top: 0; width: 46%; height: min(34vw, 580px); background: rgba(255,255,255,0.10); clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 75%); }
+  i:nth-child(3) { right: 0; top: 0; width: 26%; height: min(22vw, 380px); background: rgba(255,255,255,0.12); clip-path: polygon(60% 0, 100% 0, 100% 100%, 0 55%); }
+  /* bottom framing: rising facets on both sides */
+  i:nth-child(4) { right: 0; bottom: 0; width: 100%; height: 70%; background: #e3eef3; clip-path: polygon(100% 0, 100% 100%, 22% 100%); }
+  &::before { content: ""; position: absolute; right: 0; bottom: 0; width: 60%; height: 44%; background: #d3e6ee; clip-path: polygon(100% 0, 100% 100%, 20% 100%); }
+  &::after { content: ""; position: absolute; left: 0; bottom: 0; width: 34%; height: 30%; background: #e8f1f5; clip-path: polygon(0 15%, 100% 100%, 0 100%); }
+}
+/* research: richer facets, darker blues, balanced left and right */
+.bgshapes--research {
+  i:nth-child(1) { right: 0; top: 70px; width: 62%; height: calc(100% - 70px); background: #e3eef3; clip-path: polygon(38% 0, 100% 0, 100% 100%, 0 100%); }
+  i:nth-child(2) { right: 0; top: 70px; width: 44%; height: min(59vw, 900px); background: #b9d7e4; clip-path: polygon(55% 0, 100% 0, 100% 100%, 0 62%); }
+  i:nth-child(3) { right: 0; top: 70px; width: 26%; height: min(37.5vw, 600px); background: #7fb3c9; clip-path: polygon(70% 0, 100% 0, 100% 100%, 0 40%); }
+  i:nth-child(4) { left: 0; bottom: 0; width: 34%; height: 38%; background: #e3eef3; clip-path: polygon(0 25%, 100% 100%, 0 100%); }
+  &::before { content: ""; position: absolute; right: 0; top: 70px; width: 12%; height: min(20vw, 320px); background: #2b88a6; clip-path: polygon(40% 0, 100% 0, 100% 100%, 0 35%); }
+  &::after { content: ""; position: absolute; left: 0; top: 70px; width: 24%; height: min(34vw, 540px); background: #e3eef3; clip-path: polygon(0 0, 100% 0, 0 100%); }
+}
+/* teaching: tall band and facets that rise to meet it */
+.bgshapes--teaching {
+  i:nth-child(1) { left: 0; top: 0; width: 100%; height: min(36vw, 600px); background: linear-gradient(90deg, #2b88a6 0%, #1f6f8b 100%); clip-path: polygon(0 0, 100% 0, 100% 100%, 0 42%); }
+  i:nth-child(2) { left: 0; top: 0; width: 38%; height: min(30vw, 480px); background: rgba(255,255,255,0.10); clip-path: polygon(0 0, 100% 0, 0 100%); }
+  i:nth-child(3) { right: 0; bottom: 0; width: 46%; height: 58%; background: #e3eef3; clip-path: polygon(100% 0, 100% 100%, 0 100%); }
+  i:nth-child(4) { left: 0; bottom: 0; width: 60%; height: 46%; background: #e8f1f5; clip-path: polygon(0 18%, 100% 100%, 0 100%); }
+  &::before { content: ""; position: absolute; right: 0; bottom: 0; width: 70%; height: 34%; background: #d3e6ee; clip-path: polygon(100% 0, 100% 100%, 15% 100%); }
+  &::after { content: ""; position: absolute; left: 0; bottom: 0; width: 30%; height: 24%; background: #b9d7e4; clip-path: polygon(0 30%, 100% 100%, 0 100%); }
+}
+/* cv: thin band plus layered facets */
+.bgshapes--cv {
+  i:nth-child(1) { left: 0; top: 0; width: 100%; height: min(20vw, 320px); background: linear-gradient(90deg, #17566c 0%, #1f6f8b 55%, #2b88a6 100%); clip-path: polygon(0 0, 100% 0, 100% 22%, 0 100%); }
+  i:nth-child(2) { right: 0; top: min(12vw, 200px); width: 26%; height: min(34vw, 540px); background: #e3eef3; clip-path: polygon(100% 0, 100% 100%, 0 100%); }
+  i:nth-child(3) { left: 0; bottom: 0; width: 30%; height: 34%; background: #e3eef3; clip-path: polygon(0 0, 100% 100%, 0 100%); }
+  i:nth-child(4) { left: 0; bottom: 0; width: 16%; height: 18%; background: #b9d7e4; clip-path: polygon(0 0, 100% 100%, 0 100%); }
+  &::before { content: ""; position: absolute; right: 0; bottom: 0; width: 42%; height: 26%; background: #e3eef3; clip-path: polygon(100% 0, 100% 100%, 30% 100%); }
+  &::after { content: ""; position: absolute; right: 0; bottom: 0; width: 22%; height: 14%; background: #b9d7e4; clip-path: polygon(100% 0, 100% 100%, 20% 100%); }
+}
+/* misc: mirrored band */
+.bgshapes--misc {
+  i:nth-child(1) { left: 0; top: 0; width: 100%; height: min(40vw, 660px); background: linear-gradient(225deg, #1f6f8b 0%, #2b88a6 60%, #3a9bb8 100%); clip-path: polygon(0 0, 100% 0, 100% 100%, 0 58%); }
+  i:nth-child(2) { left: 0; top: 0; width: 42%; height: min(37vw, 600px); background: rgba(255,255,255,0.10); clip-path: polygon(0 0, 60% 0, 100% 100%, 0 70%); }
+  i:nth-child(3) { left: 0; top: 0; width: 22%; height: min(24vw, 400px); background: rgba(255,255,255,0.12); clip-path: polygon(0 0, 40% 0, 100% 100%, 0 60%); }
+  i:nth-child(4) { left: 0; bottom: 0; width: 100%; height: min(24vw, 400px); background: #e3eef3; clip-path: polygon(0 0, 0 100%, 70% 100%); }
+  &::before { content: ""; position: absolute; left: 0; bottom: 0; width: 55%; height: min(14vw, 230px); background: #d3e6ee; clip-path: polygon(0 0, 0 100%, 80% 100%); }
+  &::after { content: ""; position: absolute; right: 0; bottom: 0; width: 26%; height: min(16vw, 260px); background: #e8f1f5; clip-path: polygon(100% 20%, 100% 100%, 0 100%); }
+}
+@media (max-width: 800px) {
+  .bgshapes i:nth-child(n+2) { display: none; }
+  .bgshapes::before, .bgshapes::after { display: none; }
+  .bgshapes--home i:nth-child(1), .bgshapes--misc i:nth-child(1) { height: 300px; }
+  .bgshapes--teaching i:nth-child(1) { height: 220px; }
+  .bgshapes--cv i:nth-child(1) { height: 180px; }
+}
+
+.masthead {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #ffffff;
+  border-top: 3px solid $accent;
+  border-bottom: 1px solid #dfe8ec;
+  box-shadow: 0 1px 8px rgba(29, 42, 51, 0.05);
+}
+.greedy-nav { border-bottom: none; }
+
+#main {
+  position: relative;
+  z-index: 1;
+  background: #ffffff;
+  border: 1px solid #dfe8ec;
+  border: 1px solid #d3e2e9;
+  border-radius: 4px;
+  box-shadow: 12px 12px 0 rgba(20, 60, 80, 0.18);
+  margin-top: 2em;
+  margin-bottom: 2em;
+  padding: 2.2em 2.4em 2.4em;
+}
+.page__footer {
+  position: relative;
+  z-index: 1;
+  background: transparent;
+  footer { background: transparent; }
+}
+
+/* Reveal on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.reveal.is-visible { opacity: 1; transform: none; }
+@media (prefers-reduced-motion: reduce) {
+  .reveal { opacity: 1; transform: none; transition: none; }
+}
+
+@media (max-width: 800px) {
+  #main { box-shadow: 6px 6px 0 rgba(20, 60, 80, 0.18); padding: 1.5em 1.2em; }
+}
+
+/* Square corners and teal side bars on boxes */
+.paper--box {
+  border-radius: 4px;
+  border-left: 4px solid $accent;
+}
+.card {
+  border-radius: 4px;
+  border-left: 4px solid $accent;
+}
+.author__links a { border-radius: 4px; }
+.paper__btn, .btn { border-radius: 4px; }
+
+/* Footer sits on the shapes instead of cutting them */
+.page__footer { border-top: none; background: transparent; }
+.page__footer footer { background: transparent; }
+
+/* Homepage: themes and project cards */
+.theme-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1em;
+  margin: 1.6em 0;
+}
+.theme-card {
+  background: #ffffff;
+  border: 1px solid #d9e6ec;
+  border-top: 3px solid $accent;
+  border-radius: 4px;
+  padding: 1.1em 1.3em;
+  p { margin: 0.2em 0; font-size: 0.95em; text-align: left; }
+}
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1em;
+  margin: 0.4em 0 1em;
+}
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  background: #f3f8fa;
+  border: 1px solid #d9e6ec;
+  border-radius: 4px;
+  padding: 1.1em 1.2em;
+  color: $ink;
+  transition: transform 0.15s, box-shadow 0.15s, border-color 0.15s;
+  &:hover { transform: translate(-2px, -2px); box-shadow: 4px 4px 0 rgba(31, 111, 139, 0.22); border-color: $accent; text-decoration: none; }
+}
+.project-card__title { font-weight: 600; font-size: 0.95em; line-height: 1.35; }
+.project-card__meta { font-size: 0.8em; color: #5b6872; margin-top: auto; }
+
+/* Sticky sidebar must clear the sticky header */
+.sidebar.sticky { top: 5.5em; }

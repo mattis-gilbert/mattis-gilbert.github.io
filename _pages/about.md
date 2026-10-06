@@ -1,4 +1,5 @@
 ---
+bg: home
 permalink: /
 title: "Information frictions in the labor market"
 excerpt: "About me"
@@ -13,7 +14,12 @@ I am a fifth year Ph.D student in Economics at Sciences Po Paris and CREST under
 
  My main interests lie in applied and macro labor economics. 
  
- My research focuses on information frictions in the labor market, from both the demand and the supply side. More specifically, I study firms' imperfect information at the wage-posting stage and job seekers' imperfect information about occupational mobility.
+ My research focuses on information frictions in the labor market, from both the demand and the supply side.
+
+<div class="theme-grid" markdown="0">
+<div class="theme-card"><p class="paper__label">Demand side</p><p>Firms' imperfect information at the wage-posting stage: do recruiters know the wages posted by competing firms?</p></div>
+<div class="theme-card"><p class="paper__label">Supply side</p><p>Job seekers' imperfect information about occupational mobility: do they know where to look?</p></div>
+</div>
 
 <div class="paper paper--box">
 <p class="paper__label">Job market paper</p>
@@ -26,11 +32,12 @@ I am a fifth year Ph.D student in Economics at Sciences Po Paris and CREST under
 </div>
 
 
-<div class="home-list" markdown="0">
-<p class="paper__label paper__label--muted">Other work in progress</p>
-<div class="home-list__item"><a href="/research/">Labor-Market Information, Job Postings, and Employer Beliefs: Experimental Evidence from Austria</a><span>with Butschek, Rathelot, Steinmayr, Schwab</span></div>
-<div class="home-list__item"><a href="/research/">How does providing labour-market information to employers at the job-posting stage change job postings and hiring outcomes? Experimental evidence from French employers</a><span>with Butschek, Rathelot, Steinmayr, Schwab</span></div>
-<div class="home-list__item"><a href="/research/">Wishing to Work More? Preferences, Constraints, and Hours Worked</a><span>with Naomi Cohen and Nicolas Ghio</span></div>
+<p class="paper__label paper__label--muted section-label">Other work in progress</p>
+
+<div class="project-grid" markdown="0">
+<a class="project-card" href="/research/"><span class="project-card__title">Labor-Market Information, Job Postings, and Employer Beliefs: Experimental Evidence from Austria</span><span class="project-card__meta">with Butschek, Rathelot, Steinmayr, Schwab</span></a>
+<a class="project-card" href="/research/"><span class="project-card__title">How does providing labour-market information to employers at the job-posting stage change job postings and hiring outcomes? Experimental evidence from French employers</span><span class="project-card__meta">with Butschek, Rathelot, Steinmayr, Schwab</span></a>
+<a class="project-card" href="/research/"><span class="project-card__title">Wishing to Work More? Preferences, Constraints, and Hours Worked</span><span class="project-card__meta">with Naomi Cohen and Nicolas Ghio</span></a>
 </div>
 
 {% include paper-toggle.html %}

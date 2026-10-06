@@ -12,6 +12,7 @@ layout: compress
   </head>
 
   <body>
+    {% if page.bg %}<div class="bgshapes bgshapes--{{ page.bg }}" aria-hidden="true"><i></i><i></i><i></i><i></i></div>{% endif %}
 
     {% include browser-upgrade.html %}
     {% include masthead.html %}
